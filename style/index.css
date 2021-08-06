@@ -46,7 +46,7 @@ table {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 /* General Styles */
@@ -56,33 +56,51 @@ html{
 body{
     font-size:1.6rem;
     line-height:1.5;
-    background-color: #FBFFFB;
-    color:#4f4f4f; 
+    background-color: ivory;
+    color:#0e1844; 
+}
+h1{
+    font-size: 3rem;
 }
 h2{
-    font-size:3rem;
+    font-size:7rem;
+    text-align:center;
+    color: ivory;
+}
+h3{
+    font-size: 2rem;
     text-align:center;
 }
+section{
+    padding: 4% 0;
+}
+
 /*Helper Classes*/
-.bgimg{
+.bgpic{
     background-size:cover;
     background-repeat: no-repeat;
 }
 /* Header */
 nav{
     display:flex;
-    align-content: flex-end;
-    padding: 5%;
+    justify-content:space-between;
+    border:2px solid black;
+    padding: 3%;
     width:100%;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:ivory;
     z-index: 999;
+}
+.menu{
+    width:70%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
     
 }
-.links{
-    width:50%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+.menu a{
+    float: left;
+    padding: 1%;
+    font-size: 2rem;
 }
 
 /* top section styles */
@@ -92,6 +110,31 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image:url(/Images/Glass-orb-with-patterns.jpg);
+    background-image:url(/Images/forest.jpg);
     background-position:bottom;
 }
+
+/* middle section styles */
+#middle{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.column{
+    flex: 33.33%;
+    padding: 2%;
+}
+/* Bottom section styles */
+.contact{
+    text-align: center;
+    font-size: 2rem;
+    padding: 5%;
+    background-color: rgb(235, 228, 228);
+}
+.contact a{
+    text-decoration: none;
+}
+.contact a:hover{
+    color: white;
+}
+
